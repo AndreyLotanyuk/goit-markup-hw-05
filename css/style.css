@@ -210,12 +210,12 @@ img {
     margin-left: 30px;
 }
 .features-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     width: 270px;
     height: 120px;
-    padding-top: 25px;
-    padding-right: 100px;
-    padding-bottom: 25px;
-    padding-left: 100px;
     margin-bottom: 30px;
     background-color: var(--secondary-bg-color);
     border-radius: 4px;
@@ -257,7 +257,7 @@ img {
     border-radius: 0px 0px 4px 4px;
 }
 .team-card p {
-    padding-bottom: 16px;
+    margin-bottom: 16px;
 
     color: var(--secondary-text-color);
     font-size: 16px;
@@ -338,12 +338,14 @@ img {
 .address-list .address-item + .address-item {
     margin-top: 9px;
 }
-.social-title {
+.footer-contacts-item .social-list {
+    padding-bottom: 0;
+}
+.join-in {
     margin-bottom: 20px;
-
-    font-size: 14px;
+    
+    font-weight: 700;
     line-height: 16px;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--main-color);
 }
@@ -382,9 +384,14 @@ img {
     flex-wrap: wrap;
     gap: 30px;
 }
-.project-item:hover,
-.project-item:focus,
-.project-item:active {
+.project-link {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+.project-link:hover,
+.project-link:focus,
+.project-link:active {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .border {
